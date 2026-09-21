@@ -1,33 +1,24 @@
-## 1. Specification Link
+## 1. Traceability
 
-Closes #<Issue_Number> | Spec Document: [link to doc/spec]
+- **Issue Linked:** Closes #WO-201
+- **Spec Path:** `docs/work-order-decomposition.md`
 
-## 2. Summary of Changes
+## 2. AI Usage Disclosure & Provenance
 
-- Implemented feature X using framework Y.
-- Refactored component Z.
+- [ ] **AI Tools Used:** GitHub Copilot Chat / Inline Autocomplete
+- [ ] **Prompts / Context Provided:** Listed spec file `docs/work-order-decomposition.md` as context.
+- [ ] **Modified Files Summary:**
+  - Generated files: `docs/work-order-decomposition.md`
+  - Hand-written files: `.github/copilot-ignore`
 
-## 3. Test Plan & Proof
+## 3. Verification & Evidence
 
-- [ ] Unit tests added and passing locally.
-- [ ] Integration test log attached below:
+- [ ] Unit tests added / updated.
+- [ ] Linter & static analysis pass without warnings.
+- [ ] Spec review completed against domain guidelines.
 
-```text
-[Paste test output here]
-```
+## 4. Risk & Security Checklist
 
-## 4. AI Usage Disclosure
-
-- [ ] **No AI used**
-- [ ] **AI-Assisted:** GitHub Copilot used for boilerplate, unit tests, or function autocomplete.
-- [ ] **Human Verification:** All AI-generated logic has been read, verified, and tested line-by-line.
-
-## 5. Security Checklist
-
-- [ ] No hardcoded secrets, API keys, or credentials.
-- [ ] Input validation applied to all public endpoints.
-
-## 6. Pre-Merge Checklist
-
-- [ ] Branch is up to date with `develop`/`main`.
-- [ ] Documentation updated (`README.md` or `/docs`).
+- [ ] Secrets Scan: No hardcoded credentials or API keys in code or prompt logs.
+- [ ] OWASP Check: Input parameters sanitized; authorization checks verified.
+- [ ] Rollback Plan: Pure documentation PR (Zero runtime impact).
