@@ -1,2 +1,7 @@
 # Lab instruction files - keep local, do not push
 *.docx
+
+# Lab 1.2 - runtime/secrets exclusions
+.env
+bin/
+node_modules/
